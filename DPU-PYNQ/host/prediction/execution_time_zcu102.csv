@@ -1,0 +1,108 @@
+No.,Application,ID,Model,Name,"E2E latency (ms)
+Thread Num =1","E2E throughput (fps)
+Single Thread","E2E throughput (fps)
+Multi Thread",Gops,execution_time,Input_size
+1,Image Classification,1,resnet50,cf_resnet50_imagenet_224_224_7.7G,13.75,72.7,173.6,7.7,13.75,50176
+2,Image Classification,1,resnet18,cf_resnet18_imagenet_224_224_3.65G,5.46,183.1,478,3.65,5.46,50176
+3,Image Classification,1,Inception_v1,cf_inceptionv1_imagenet_224_224_3.16G,5.57,179.5,469.8,3.16,5.57,50176
+4,Image Classification,1,Inception_v2,cf_inceptionv2_imagenet_224_224_4G,7.6,131.6,303.2,4,7.6,50176
+5,Image Classification,1,Inception_v3,cf_inceptionv3_imagenet_299_299_11.4G,16.99,58.8,135.9,11.4,16.99,89401
+6,Image Classification,1,Inception_v4,cf_inceptionv4_imagenet_299_299_24.5G,34.95,28.6,68.5,24.5,34.95,89401
+7,Image Classification,1,Mobilenet_v2,cf_mobilenetv2_imagenet_224_224_0.59G,4,250,734,0.59,4,50176
+8,Image Classification,1,SqueezeNet,cf_squeezenet_imagenet_227_227_0.76G,3.69,270.8,1069,0.76,3.69,51529
+9,ADAS Pedstrain Detection,2,ssd_pedestrian_pruned_0_97,cf_ssdpedestrian_coco_360_640_0.97_5.9G,13.14,76.1,278.6,5.9,13.14,230400
+10,Object Detection,2,refinedet_baseline,cf_refinedet_coco_360_480_123G,117.37,8.5,24.7,123,117.37,172800
+11,Object Detection,2,refinedet_pruned_0_8,cf_refinedet_coco_360_480_0.8_25G,30.74,32.5,100.1,25,30.74,172800
+12,Object Detection,2,refinedet_pruned_0_92,cf_refinedet_coco_360_480_0.92_10.10G,15.9,62.9,201.3,10.1,15.9,172800
+13,Object Detection,2,refinedet_pruned_0_96,cf_refinedet_coco_360_480_0.96_5.08G,11.46,87.2,288,5.08,11.46,172800
+14,ADAS Vehicle Detection,2,ssd_adas_pruned_0_95,cf_ssdadas_bdd_360_480_0.95_6.3G,11.46,87.2,297.3,6.3,11.46,172800
+15,Traffic Detection,2,ssd_traffic_pruned_0_9,cf_ssdtraffic_360_480_0.9_11.6G,18.22,54.9,200.1,11.6,18.22,172800
+16,ADAS Lane Detection,2,VPGnet_pruned_0_99,cf_VPGnet_caltechlane_480_640_0.99_2.5G,10.59,94.4,351.3,2.5,10.59,307200
+17,Object Detection,2,ssd_mobilenet_v2,cf_ssdmobilenetv2_bdd_360_480_6.57G,24.99,40,117.6,6.57,24.99,172800
+18,ADAS Segmentation,3,FPN,cf_fpn_cityscapes_256_512_8.9G,29.03,34.4,151.9,8.9,29.03,131072
+19,Pose Estimation,0,SP_net,cf_SPnet_aichallenger_224_128_0.54G,1.94,515.1,1588.7,0.54,1.94,28672
+20,Pose Estimation,0,Openpose_pruned_0_3,cf_openpose_aichallenger_368_368_0.3_189.7G,265.03,3.8,15.2,189.7,265.03,135424
+21,Face Detection,2,densebox_320_320,cf_densebox_wider_320_320_0.49G,2.38,420.2,1630,0.49,2.38,102400
+22,Face Detection,2,densebox_640_360,cf_densebox_wider_360_640_1.11G,4.78,209,812.9,1.11,4.78,230400
+23,Face Recognition,0,face_landmark,cf_landmark_celeba_96_72_0.14G,1.19,841.6,1547.6,0.14,1.19,6912
+24,Re-identification,0,reid,cf_reid_market1501_160_80_0.95G,2.85,350.5,692.7,0.95,2.85,12800
+25,Detection+Segmentation,2,multi_task,cf_multitask_bdd_288_512_14.8G,26.35,37.9,127,14.8,26.35,147456
+26,Object Detection,2,yolov3_bdd,dk_yolov3_bdd_288_512_53.7G,80.56,12.4,33,53.7,80.56,147456
+27,Object Detection,2,yolov3_adas_pruned_0_9,dk_yolov3_cityscapes_256_512_0.9_5.46G,11.02,90.7,263.4,5.46,11.02,131072
+28,Object Detection,2,yolov3_voc,dk_yolov3_voc_416_416_65.42G,78.5,12.7,33.5,65.42,78.5,173056
+29,Object Detection,2,yolov2_voc,dk_yolov2_voc_448_448_34G,37.88,26.4,70,34,37.88,200704
+30,Object Detection,2,yolov2_voc_pruned_0_66,dk_yolov2_voc_448_448_0.66_11.56G,15.9,62.9,191.6,11.56,15.9,200704
+31,Object Detection,2,yolov2_voc_pruned_0_71,dk_yolov2_voc_448_448_0.71_9.86G,13.81,72.4,224,9.86,13.81,200704
+32,Object Detection,2,yolov2_voc_pruned_0_77,dk_yolov2_voc_448_448_0.77_7.82G,11.83,84.5,269.3,7.82,11.83,200704
+33,Face Recognition,0,ResNet20-face,cf_facerec-resnet20_112_96_3.5G,6.11,163.5,329.8,3.5,6.11,10752
+34,Face Recognition,0,ResNet64-face,cf_facerec-resnet64_112_96_11G,14.13,70.7,176.8,11,14.13,10752
+35,Medical Segmentation,3,FPN_Res18_segmentation,cf_FPN-resnet18_EDD_320_320_45.3G,81.65,12.2,45.8,45.3,81.65,102400
+36,Plate Detection,2,plate detection,cf_plate-detection_320_320_0.49G,1.97,506.2,2009.4,0.49,1.97,102400
+37,Plate Recognition,0,plate recognition,cf_plate-recognition_96_288_1.75G,6.66,150.2,494.5,1.75,6.66,27648
+38,Face Detection,2,retinaface,cf_retinaface_wider_360_640_1.11G,7.94,125.9,542.1,1.11,7.94,230400
+39,Face Quality,0,face_quality,cf_face-quality_80_60_61.68M,0.47,2118.7,7244.3,0.06168,0.47,4800
+40,Robot Instrument Segmentation,3,FPN-R18(light-weight),cf_FPN-resnet18_Endov_240_320_13.75G,27.52,36.3,155.9,13.75,27.52,76800
+41,Pose Estimation,0,Hourglass,cf_hourglass_mpii_256_256_10.2G,54.76,18.3,73.5,10.2,54.76,65536
+42,2D Detection,2,tiny-yolov3,dk_tiny-yolov3_416_416_5.46G,8.51,117.5,393,5.46,8.51,173056
+43,2D Detection,2,yolov4,dk_yolov4_coco_416_416_60.1G,75.45,13.2,33.8,60.1,75.45,173056
+44,2D Detection,2,pruned_yolov4,dk_yolov4_coco_416_416_0.36_38.2G,55.4,18,45.5,38.2,55.4,173056
+45,Classification,1,Inception_resnet_v2,tf_inceptionresnetv2_imagenet_299_299_26.35G,44.67,22.4,50.8,26.35,44.67,89401
+46,Classification,1,Inception_v1,tf_inceptionv1_imagenet_224_224_3G,5.47,182.8,468.9,3,5.47,50176
+47,Classification,1,Inception_v3,tf_inceptionv3_imagenet_299_299_11.45G,17.03,58.7,134.8,11.45,17.03,89401
+48,Classification,1,Inception_v4,tf_inceptionv4_imagenet_299_299_24.55G,34.97,28.6,68.5,24.55,34.97,89401
+49,Classification,1,Mobilenet_v1,tf_mobilenetv1_0.25_imagenet_128_128_27.15M,0.89,1122.8,4147.4,0.027,0.89,16384
+50,Classification,1,Mobilenet_v1,tf_mobilenetv1_0.5_imagenet_160_160_150.07M,1.4,712.3,2657.2,0.15007,1.4,25600
+51,Classification,1,Mobilenet_v1,tf_mobilenetv1_1.0_imagenet_224_224_1.14G,3.37,296.8,940.9,1.14,3.37,50176
+52,Classification,1,Mobilenet_v2,tf_mobilenetv2_1.0_imagenet_224_224_0.59G,4.08,244.7,694.9,0.59,4.08,50176
+53,Classification,1,Mobilenet_v2,tf_mobilenetv2_1.4_imagenet_224_224_1.16G,5.57,179.5,467.9,1.16,5.57,50176
+54,Classification,1,resnet_v1_50,tf_resnetv1_50_imagenet_224_224_6.97G,12.56,79.5,185.6,6.97,12.56,50176
+55,Classification,1,resnet_v1_101,tf_resnetv1_101_imagenet_224_224_14.4G,23.48,42.6,106.4,14.4,23.48,50176
+56,Classification,1,resnet_v1_152,tf_resnetv1_152_imagenet_224_224_21.83G,34.29,29.1,74.1,21.83,34.29,50176
+57,Classification,1,vgg_16,tf_vgg16_imagenet_224_224_30.96G,49.75,20.1,41.1,30.96,49.75,50176
+58,Classification,1,vgg_19,tf_vgg19_imagenet_224_224_39.28G,57.68,17.3,36.6,39.28,57.68,50176
+59,Object Detection,2,ssd_mobilenet_v1,tf_ssdmobilenetv1_coco_300_300_2.47G,9.39,106.5,330.5,2.47,9.39,90000
+60,Object Detection,2,ssd_mobilenet_v2,tf_ssdmobilenetv2_coco_300_300_3.75G,12.67,78.9,212.4,3.75,12.67,90000
+61,Object Detection,2,ssd_resnet_50_v1_fpn,tf_ssdresnet50v1_fpn_coco_640_640_178.4G,346.97,2.9,5.1,178.4,346.97,409600
+62,Object Detection,2,yolov3_voc,tf_yolov3_voc_416_416_65.63G,75.63,13.2,34.5,65.63,75.63,173056
+63,Object Detection,2,mlperf_ssd_resnet34,tf_mlperf_resnet34_coco_1200_1200_433G,559.75,1.8,7.1,433,559.75,1440000
+64,Classification,1,Inception_v2,tf_inceptionv2_imagenet_224_224_3.88G,10.97,91.1,230,3.88,10.97,50176
+65,Classification,1,resnet_v2_50,tf_resnetv2_50_imagenet_299_299_13.1G,28.49,35.1,95.5,13.1,28.49,89401
+66,Classification,1,resnet_v2_101,tf_resnetv2_101_imagenet_299_299_26.78G,48.77,20.5,54.4,26.78,48.77,89401
+67,Classification,1,resnet_v2_152,tf_resnetv2_152_imagenet_299_299_40.47G,69.03,14.5,37.5,40.47,69.03,89401
+68,Object Detection,2,ssdlite_mobilenetv2,tf_ssdlite_mobilenetv2_coco_300_300_1.5G,9.92,100.7,305.2,1.5,9.92,90000
+69,Object Detection,2,ssd_inceptionv2,tf_ssdinceptionv2_coco_300_300_9.62G,28.58,35,101.5,9.62,28.58,90000
+70,Segmentation,3,Mobilenet_v2,tf_mobilenetv2_cityscapes_1024_2048_132.74G,620.95,1.6,4.6,132.74,620.95,2097152
+71,Classification,1,efficientnet-edgetpu-S,tf_efficientnet-edgetpu-S_imagenet_224_224_4.72G,10.54,94.9,260.9,4.72,10.54,50176
+72,Classification,1,efficientnet-edgetpu-M,tf_efficientnet-edgetpu-M_imagenet_240_240_7.34G,14.53,68.8,181.7,7.34,14.53,57600
+73,Classification,1,efficientnet-edgetpu-L,tf_efficientnet-edgetpu-L_imagenet_300_300_19.36G,35.77,27.9,78,19.36,35.77,90000
+74,Classification,1,mlperf_resnet50,tf_mlperf_resnet50_imagenet_224_224_8.19G,14.04,71.2,168.5,8.19,14.04,50176
+75,General Detection,2,refinedet,tf_refinedet_VOC_320_320_81.9G,90.56,11,34.4,81.9,90.56,102400
+76,Classification,1,mobilenet_edge_1.0,tf_mobilenetEdge1.0_imagenet_224_224_990M,5.04,198.2,547.3,0.99,5.04,50176
+77,Classification,1,mobilenet_edge_0.75,tf_mobilenetEdge0.75_imagenet_224_224_624M,4.21,237.5,706.7,0.62,4.21,50176
+78,Medical Detection,2,refinedet_medical,tf_RefineDet-Medical_EDD_320_320_9.83G,15.13,66.1,230.4,9.83,15.13,102400
+79,Super Resolution,0,pruned_rcan,tf_rcan_DIV2K_360_640_0.98_86.95G,131.87,7.6,17.1,86.95,131.87,230400
+80,Classification,1,resnet50,tf2_resnet50_imagenet_224_224_7.76G,14.15,70.6,171.2,7.76,14.15,50176
+81,Classification,1,Mobilenet_v1,tf2_mobilenetv1_imagenet_224_224_1.15G,3.42,292.5,930.9,1.15,3.42,50176
+82,Classification,1,Inception_v3,tf2_inceptionv3_imagenet_299_299_11.5G,17.15,58.3,136.6,11.5,17.15,89401
+83,Medical Segmentation,3,2d-unet,tf2_2d-unet_nuclei_128_128_5.31G,6.46,154.8,395.1,5.31,6.46,16384
+84,Semantic Segmentation,3,ERFNet,tf2_erfnet_cityscapes_512_1024_54G,141.25,7.1,24,54,141.25,524288
+86,Segmentation,3,ENet,pt_ENet_cityscapes_512_1024_8.6G,108.07,9.3,36.9,8.6,108.07,524288
+87,Segmentation,3,SemanticFPN,pt_SemanticFPN_cityscapes_256_512_10G,29.34,34.1,161.5,10,29.34,131072
+88, Face Recognition,0,ResNet20-face,pt_facerec-resnet20_mixed_112_96_3.5G,6.12,163.3,329.7,3.5,6.12,10752
+89,Face Quality,0,face quality,pt_face-quality_80_60_61.68M,0.48,2098,7196.2,0.06168,0.48,4800
+90,Multi Task,0,multi_task_v2,pt_MT-resnet18_mixed_320_512_13.65G,32,31.2,101.8,13.65,32,163840
+91,Face ReID,0,face_reid_large,pt_facereid-large_96_96_515M,1.19,841.3,2205.7,0.515,1.19,9216
+92,Face ReID,0,face_reid_small,pt_facereid-small_80_80_90M,0.54,1861.8,5973.2,0.09,0.54,6400
+93,Re-identification,0,person_reid,pt_personreid-res50_market1501_256_128_5.4G,10.33,96.8,228.2,5.4,10.33,32768
+94,Re-identification,0,person_reid,pt_personreid-res18_market1501_176_80_1.1G,2.86,349.2,684.1,1.1,2.86,14080
+95, 3D Detection,2,pointpillars,pt_pointpillars_kitti_12000_100_10.8G,50.34,19.8,50,10.8,50.34,1200000
+96,3D point cloud Segmentation,3,salsanext,pt_salsanext_semantic-kitti_64_2048_0.6_20.4G,181.45,5.5,21.1,20.4,181.45,131072
+97,Covid-19 Segmentation,3,FPN-R18 (light-weight),pt_FPN-resnet18_covid19-seg_352_352_22.7G,27.93,35.8,106.1,22.7,27.93,123904
+98,CT lung Segmentation,3,2d-unet,pt_unet_chaos-CT_512_512_23.3G,45.15,22.1,69.7,23.3,45.15,262144
+99,surround-view 3D Detection,2,surround-view pointpillars,pt_pointpillars_nuscenes_40000_64_108G,440.5,2.3,9.9,108,440.5,2560000
+100,3D Segmentation,3,salsanext_v2,pt_salsanextv2_semantic-kitti_64_2048_0.75_32G,246.3,4.1,11.1,32,246.3,131072
+101,4D radar based 3D Detection,2,centerpoint,pt_centerpoint_astyx_2560_40_54G,62.45,16,48,54,62.45,102400
+103,Multi Task,0,multi_task_v3,pt_multitaskv3_mixed_320_512_25.44G,60.01,16.6,60.8,25.44,60.01,163840
+106, Crowd Counting,0,Bayesian Crowd Counting,pt_BCC_shanghaitech_800_1000_268.9G,304.73,3.3,10.7,268.9,304.73,800000
+107,Production Recognition,0,PMG,pt_pmg_rp2k_224_224_2.28G,6.91,144.7,363.4,2.28,6.91,50176
+108,Segmentation,3,SemanticFPN-mobilenetv2,pt_SemanticFPN-mobilenetv2_cityscapes_512_1024_5.4G,98.54,10.1,54,5.4,98.54,524288
