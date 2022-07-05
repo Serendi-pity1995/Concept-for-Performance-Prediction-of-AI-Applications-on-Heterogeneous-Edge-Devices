@@ -1,5 +1,0 @@
-model_num,input_horizontal,input_vertical,FLOPs,Total_params,Memory
-1,32,32,0.01,1.85,0.18206
-2,64,64,0.03,7.09,0.780076
-3,96,96,0.08,16.53,1.804076
-4,128,128,0.14,30.16,3.25406
