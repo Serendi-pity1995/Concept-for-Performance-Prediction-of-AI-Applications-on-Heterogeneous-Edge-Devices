@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
   <img width="100%" height="100%" src="docs/images/Vitis-AI.png">
 </div>
@@ -196,3 +197,6 @@ For more information, please refer to [Vitis AI User Guide](https://www.xilinx.c
 [Models]: https://www.xilinx.com/products/boards-and-kits/alveo/applications/xilinx-machine-learning-suite.html#gettingStartedCloud
 [whitepaper here]: https://www.xilinx.com/support/documentation/white_papers/wp504-accel-dnns.pdf
 
+=======
+# Performance-Prediction-of-AI-Applications
+>>>>>>> 879cfca126225ca6fbae36b414dc0603731a3bf2
