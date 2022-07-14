@@ -1,16 +1,10 @@
-# DPU on PYNQ
+# Concept for Performance Prediction of AI Applications on Heterogeneous Edge Devices
 
-This repository holds the PYNQ DPU overlay. Specifically, the Vitis AI DPU 
-is included in the accompanying bitstreams with example training and inference
-notebooks ready to run on PYNQ enabled platforms.
-Steps are also included to rebuild the designs in Vitis and can
-be ported onto PYNQ-enabled Zynq Ultrascale+ boards.
+This repository includes relevant programm and codes from thesis Concept for Performance Prediction of AI Applications on Heterogeneous Edge Devices
 
-In this repository, we currently support the following boards:
+This repository mainly holds the PYNQ DPU overlay. The Vitis AI DPU is included in the accompanying bitstreams. It can run on PYNQ enabled platforms. 
 
-* Ultra96
-* ZCU104
-* KV260
+Here, this repository supports Ultra96 board.
 
 Other Zynq Ultrascale+ boards may be supported with few adjustments.
 This repository supports Vitis AI 1.4.0.
@@ -43,8 +37,7 @@ in `pynq-dpu` folder.
 ## Rebuild DPU Block Design
 
 The DPU IP comes from the [Vitis Ai Github](https://github.com/Xilinx/Vitis-AI/tree/v1.4.0).
-If you want to rebuild the hardware project, you can refer to the
-[instructions for DPU Hardware Design](./boards/README.md).
+
 
 In short, the following files will be generated in `boards/<Board>` folder:
 
