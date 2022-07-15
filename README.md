@@ -2,9 +2,9 @@
 
 This repository includes relevant programm and codes from thesis Concept for Performance Prediction of AI Applications on Heterogeneous Edge Devices
 
-It is mainly divided into two parts, in the "host" folder are the programme running on the host machine, in the “on_ultra96" folder are the programme running on the ultra96. For this, it is also necessary to install the corresponding dependency library.
+It is mainly divided into two parts, in the `host` folder are the programme running on the host machine, in the `on_ultra96` folder are the programme running on the ultra96. For this, it is also necessary to install the corresponding dependency library.
 
-For programs running on the host machine, this requires Vitis AI to be installed. For programs running on ultra96, this requires DPU-PYNQ to be installed.
+For programs running on the host machine, this requires [Vitis AI](https://github.com/Xilinx/Vitis-AI) to be installed. For programs running on ultra96, this requires [pynq-dpu](https://github.com/Xilinx/DPU-PYNQ) to be installed.
 
 
 ## Installation of Vitis AI on host machine
