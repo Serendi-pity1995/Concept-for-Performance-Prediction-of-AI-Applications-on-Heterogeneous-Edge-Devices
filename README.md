@@ -2,65 +2,94 @@
 
 This repository includes relevant programm and codes from thesis Concept for Performance Prediction of AI Applications on Heterogeneous Edge Devices
 
-This repository mainly holds the PYNQ DPU overlay. The Vitis AI DPU is included in the accompanying bitstreams. It can run on PYNQ enabled platforms. 
+It is mainly divided into two parts, in the "host" folder are the programme running on the host machine, in the “on_ultra96" folder are the programme running on the ultra96. For this, it is also necessary to install the corresponding dependency library.
 
-Here, this repository supports Ultra96 board.
+For programs running on the host machine, this requires Vitis AI to be installed. For programs running on ultra96, this requires DPU-PYNQ to be installed.
 
-Other Zynq Ultrascale+ boards may be supported with few adjustments.
-This repository supports Vitis AI 1.4.0.
 
-## Quick Start
+## Installation of Vitis AI on host machine
 
-### 1. Install
+### 1. Preparation
 
-To install the pynq-dpu on your board, simply run:
+- [Install Docker](docs/quick-start/install/install_docker/README.md) - if Docker not installed on your machine yet
+
+- [Ensure your linux user is in the group docker](https://docs.docker.com/install/linux/linux-postinstall/)
+
+- At least 100GB of disk space for the disk partition running Docker
+
+- Clone the Vitis-AI repository 
+
+```shell
+git clone --recurse-submodules https://github.com/Xilinx/Vitis-AI  
+
+cd Vitis-AI
+```
+
+### 2. Building Docker from Recipe
+
+There are two types of docker recipes provided - CPU recipe and GPU recipe. If you have a compatible nVidia graphics card with CUDA support, you could use GPU recipe; otherwise you could use CPU recipe.
+
+- CPU Docker
+
+```shell
+cd setup/docker
+./docker_build_cpu.sh
+```
+To run the CPU docker, use command:
+
+```shell
+./docker_run.sh xilinx/vitis-ai-cpu:latest
+```
+
+- GPU Docker
+
+```shell
+cd setup/docker
+./docker_build_gpu.sh
+```
+To run the GPU docker, use command:
+
+```shell
+./docker_run.sh xilinx/vitis-ai-gpu:latest
+```
+
+
+
+### 3. Lauch jupyter notebook
+
+From inside the docker environment, activate tensorflow2 conda environment and the launch jupyter notebook.
+
+```shell
+conda activate vitis-ai-tensorflow2
+jupyter notebook --ip=0.0.0.0 --port=8080
+```
+
+
+
+## Installation of pynq-dpu on Ultra96 
+
+### 1.Preparation
+
+To install the pynq-dpu on Ultra96, simply run:
 
 ```shell
 pip3 install pynq-dpu --no-build-isolation
 ```
 
-Then go to your jupyter notebook home folder and fetch the notebooks:
+Then go to jupyter notebook home folder and fetch the notebooks:
 
 ```shell
 cd $PYNQ_JUPYTER_NOTEBOOKS
 pynq get-notebooks pynq-dpu -p .
 ```
 
-This will make sure the desired notebooks shows up in your jupyter notebook 
+This will make sure the desired notebooks shows up in jupyter notebook 
 folder.
 
 ### 2. Run
 
-You are ready to go! Now in jupyter, you can explore the notebooks 
-in `pynq-dpu` folder.
-
-## Rebuild DPU Block Design
-
-The DPU IP comes from the [Vitis Ai Github](https://github.com/Xilinx/Vitis-AI/tree/v1.4.0).
+Now in jupyter, you can explore the notebooks in `pynq-dpu` folder.
 
 
-In short, the following files will be generated in `boards/<Board>` folder:
-
-1. `dpu.bit`
-2. `dpu.hwh`
-3. `dpu.xclbin`
-
-These are the overlay files that can be used by the `pynq_dpu` package.
-
-## Rebuild DPU Models
-
-[DPU models](https://github.com/Xilinx/Vitis-AI/tree/v1.4) 
-are available on the Vitis AI GitHub repository [model zoo](https://github.com/Xilinx/Vitis-AI/tree/v1.4/models/AI-Model-Zoo),
-where you can find a model-list containing quantized models, as well as pre-compiled .xmodel files
-that can be directly loaded into your DPU application.
-
-If you want to recompile the DPU models or train your own network, you can refer to the
-[instructions for DPU models](./host/README.md).
 
 
-----
-----
-
-Copyright (C) 2021 Xilinx, Inc
-
-SPDX-License-Identifier: Apache-2.0
